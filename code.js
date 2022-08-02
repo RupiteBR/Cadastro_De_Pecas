@@ -1,5 +1,5 @@
 var readlineSync = require('readline-sync');
-var Lista= ["Pneu","Motor","volante"]
+var Lista= ["Pneu","Motor","volante","Vidros","Retrovisor","Bateria","Freios","Borrachas","Painel"]
 console.log('------------------------------------')
 var Peca = readlineSync.question( console.log('Nome da Peça:') )
 console.log('------------------------------------')
@@ -12,7 +12,7 @@ if(Peca.length < 3){
     return
 }
 console.log('------------------------------------')
-var Peso = readlineSync.question( console.log('Qual o peso da peça ?'))
+var Peso = [readlineSync.question( console.log('Qual o peso da peça ?'))]
 console.log('------------------------------------')
 if (Peso <= 100 ){
     console.log('------------------------------------')
@@ -22,19 +22,20 @@ if (Peso <= 100 ){
     console.log('------------------------------------')
     return
 }
-for (let Lista = Peca; Peca.length >= 3; Lista.push(Peca)) {
-    if(Lista.length >=11 ){
+
+if(Lista.length >=10 ){
         console.log('------------------------------------')
         console.log('Impossivel adicionar. A lista alcançou o limite.')
         console.log('------------------------------------')
+        return
     }
+else{
     console.log('------------------------------------')
     console.log(`A peça ${Peca} foi adicionado a lista com sucesso!`)
     console.log('------------------------------------')
-    break
 }
+
 Lista.forEach(function(item,indice,array){
-        console.log("Outra peça da lista:")
-        console.log(item)
+        console.log(`Outra peça da lista:${item}`)
 })
 console.log("Finalizando...")
