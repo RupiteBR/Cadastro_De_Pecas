@@ -1,0 +1,4 @@
+Fiz esse codigo simples utilizando javascript(nodejs), com o objetivo de criar um sistema de cadastro de peças como requisitado na atividade.\
+Utilizei do nmp install readline-sync para adicionar um pacote que tornasse mais simples a resolução do problema. Atraves de poucas linhas de codigo consegui resolver o problema em questão, não pude fazer da forma que eu mais desejava por falta de conhecimento em node.js, porém acredito que já tenha sido o suficiente.\
+O meu objetivo era fazer com que atraves do console fossem adicionadas mais peças a lista e que o usuario tivesse a opção de puxar as informações na lista.\
+Irei atras de mais informações para que eu possa melhorar esse codigo.
